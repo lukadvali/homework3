@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     }
 
-    fun playGame(clickedView: Button, buttonNumber: Int){
+    private fun playGame(clickedView: Button, buttonNumber: Int){
         if (activePlayer == 1){
             clickedView.text = "X"
             clickedView.setBackgroundColor(Color.RED)
@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         check()
     }
 
-    fun check(){
+    private fun check(){
         var winner = 0
         if (firstPlayer.contains(1) && firstPlayer.contains(2) && firstPlayer.contains(3)){
             winner = 1
