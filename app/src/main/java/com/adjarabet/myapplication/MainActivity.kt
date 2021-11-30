@@ -143,6 +143,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 R.id.button8 -> buttonNumber = 8
                 R.id.button9 -> buttonNumber = 9
             }
+
             if (buttonNumber != 0){
                 playGame(clickedView, buttonNumber)
             }
