@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity">c
 
     <TableLayout
         android:layout_width="match_parent"
@@ -69,32 +69,44 @@
         </TableRow>
 
         <TableRow android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="3">
+            android:layout_height="wrap_content"
+            android:weightSum="3">
 
-        <Button
-            android:id="@+id/button7"
-            android:layout_weight="1"
-            android:textSize="23sp"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"/>
+            <Button
+                android:id="@+id/button7"
+                android:layout_weight="1"
+                android:textSize="23sp"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"/>
 
-        <Button
-            android:id="@+id/button8"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:textSize="23sp"
-            android:layout_height="100dp" />
+            <Button
+                android:id="@+id/button8"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:textSize="23sp"
+                android:layout_height="100dp" />
 
-        <Button
-            android:id="@+id/button9"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:textSize="23sp"
-            android:layout_height="100dp"/>
-    </TableRow>
+            <Button
+                android:id="@+id/button9"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:textSize="23sp"
+                android:layout_height="100dp"/>
+        </TableRow>
 
 
     </TableLayout>
+
+    <Button
+        android:backgroundTint="@color/purple_500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reset"
+        android:id="@+id/reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="30dp"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
